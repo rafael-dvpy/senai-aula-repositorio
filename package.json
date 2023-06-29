@@ -1,16 +1,18 @@
 {
   "name": "senai-aula-repositorio",
   "version": "1.0.0",
-  "description": "Olá, esse é um repositório teste",
-  "main": "index.js",
   "type": "module",
+  "description": "Olá, esse é um repositório teste",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Rafael",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^7.3.1"
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22"
   }
 }
