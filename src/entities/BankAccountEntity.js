@@ -4,6 +4,16 @@ const BankAccountEntity = class {
         this.balance = balance
         this.owner = owner
     }
+    payerTransactions = []
+    recipientTransactions = []
+
+    addPayerTransaction = (transaction) => {
+        this.payerTransactions.push(transaction)
+    }
+
+    addRecipientTransaction = (transaction) => {
+        this.recipientTransactions.push(transaction)
+    }
 
     addToBalance = (value) => {
         this.balance += value
